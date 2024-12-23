@@ -10,6 +10,7 @@ public class CalculatorTest {
         System.out.println("test1");
     }
 
+
     @Test
     @DisplayName("plus 함수 구현")
     public void t2() {
@@ -23,5 +24,21 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int rst = calculator.plus(1, 2);
         Assertions.assertThat(rst).isEqualTo(3);
+    }
+
+    @Test
+    @DisplayName("plus 함수 4 + 6 테스트")
+    public void t4() {
+        Calculator calculator = new Calculator();
+        int rst = calculator.plus(4, 6);
+        Assertions.assertThat(rst).isEqualTo(10);
+    }
+
+    @Test
+    @DisplayName("plus 함수 1 + 4 테스트")
+    public void t5() {
+        Calculator calculator = new Calculator();
+        int rst = calculator.plus(1, 4);
+        Assertions.assertThat(rst).isEqualTo(5);
     }
 }
